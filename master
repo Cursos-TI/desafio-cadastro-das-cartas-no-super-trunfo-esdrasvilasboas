@@ -74,7 +74,13 @@ int main() {
     float pibPerCapitac1 = (cidade1.PIB * 1000000000) / cidade1.populacao;
     printf("PIB per Capita: %.2f\n", pibPerCapitac1);
 
+float somaAtributosc1 = cidade1.populacao 
+                        + cidade1.area 
+                        + (cidade1.PIB * 1000000000) 
+                        + cidade1.numeroPontosTuristicos 
+                        + densidadeInvertidac1;
 
+    printf("\nSoma de todos os atributos (incluindo densidade invertida): %.2f\n", somaAtributosc1);
 
 
     // Exibindo os dados da segunda cidade
@@ -97,6 +103,15 @@ int main() {
     // Cálculo do PIB per capita
     float pibPerCapitac2 = (cidade2.PIB * 1000000000) / cidade2.populacao;
     printf("PIB per Capita: %.2f\n", pibPerCapitac2);
+
+float somaAtributosc2 = cidade2.populacao 
+                        + cidade2.area 
+                        + (cidade2.PIB * 1000000000) 
+                        + cidade2.numeroPontosTuristicos 
+                        + densidadeInvertidac2;
+
+    printf("\nSoma de todos os atributos (incluindo densidade invertida): %.2f\n", somaAtributosc2);
+
 
     return 0;
 }
