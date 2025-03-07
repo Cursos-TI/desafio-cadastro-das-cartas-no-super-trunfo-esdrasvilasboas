@@ -26,7 +26,7 @@ int main() {
     scanf("%d", &numeroPontosTuristicos);
     
     printf("\n--- Dados da Cidade ---\n");
-    printf("Código da cidade: %d\n", codigoCidade);
+    printf("Código da cidade: %s\n", codigoCidade);
     printf("Nome da cidade: %s\n", nomeCidade);
     printf("População: %u habitantes\n", populacao);
     printf("Área: %.2f km²\n", area);
