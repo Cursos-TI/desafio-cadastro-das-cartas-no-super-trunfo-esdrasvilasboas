@@ -71,12 +71,12 @@ int main() {
     printf("Densidade Populacional: %.2f habitantes por km²\n", densidadec1);
     
     // Cálculo do PIB per capita
-    float pibPerCapitac1 = (cidade1.PIB * 1000000000) / cidade1.populacao;
+    float pibPerCapitac1 = (cidade1.PIB) / cidade1.populacao;
     printf("PIB per Capita: %.2f\n", pibPerCapitac1);
 
 float somaAtributosc1 = cidade1.populacao 
                         + cidade1.area 
-                        + (cidade1.PIB * 1000000000) 
+                        + (cidade1.PIB) 
                         + cidade1.numeroPontosTuristicos 
                         + densidadeInvertidac1;
 
@@ -92,7 +92,7 @@ float somaAtributosc1 = cidade1.populacao
     printf("PIB: %.2f bilhões\n", cidade2.PIB);
     printf("Número de pontos turísticos: %d\n", cidade2.numeroPontosTuristicos);
     printf("Densidade Populacional: %.2f habitantes por km²\n", cidade2.populacao / cidade2.area);
-    printf("PIB per Capita: %.2f\n", (cidade2.PIB * 1000000000) / cidade2.populacao);
+    printf("PIB per Capita: %.2f\n", (cidade2.PIB) / cidade2.populacao);
 
 // Cálculo da densidade populacional e densidade invertida
     float densidadec2 = cidade2.populacao / cidade2.area;
@@ -101,17 +101,23 @@ float somaAtributosc1 = cidade1.populacao
     printf("Densidade Populacional: %.2f habitantes por km²\n", densidadec2);
     
     // Cálculo do PIB per capita
-    float pibPerCapitac2 = (cidade2.PIB * 1000000000) / cidade2.populacao;
+    float pibPerCapitac2 = (cidade2.PIB) / cidade2.populacao;
     printf("PIB per Capita: %.2f\n", pibPerCapitac2);
 
 float somaAtributosc2 = cidade2.populacao 
                         + cidade2.area 
-                        + (cidade2.PIB * 1000000000) 
+                        + (cidade2.PIB) 
                         + cidade2.numeroPontosTuristicos 
                         + densidadeInvertidac2;
 
     printf("\nSoma de todos os atributos (incluindo densidade invertida): %.2f\n", somaAtributosc2);
 
+// Compara População
+    if (cidade1.populacao > cidade2.populacao ) {
+        printf("%s tem a maior população\n", cidade1.nomeCidade);
+    } else {
+        printf("%s tem a maior população\n", cidade2.nomeCidade);
+    }
 
     return 0;
 }
