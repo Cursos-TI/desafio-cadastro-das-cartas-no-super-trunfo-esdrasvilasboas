@@ -65,7 +65,7 @@ int main() {
     printf("Número de pontos turísticos: %d\n", cidade1.numeroPontosTuristicos);
 // Cálculo e exibição da densidade populacional
     printf("Densidade Populacional: %.2f habitantes por km²\n", cidade1.populacao / cidade1.area);
-    printf("PIB per Capita: %.2f\n", (cidade1.PIB * 1000000000 / cidade1.populacao);
+    printf("PIB per Capita: %.2f\n", (cidade1.PIB * 1000000000) / cidade1.populacao);
 
     // Exibindo os dados da segunda cidade
     printf("\n--- Dados da Cidade 2 ---\n");
@@ -76,7 +76,7 @@ int main() {
     printf("PIB: %.2f bilhões\n", cidade2.PIB);
     printf("Número de pontos turísticos: %d\n", cidade2.numeroPontosTuristicos);
     printf("Densidade Populacional: %.2f habitantes por km²\n", cidade2.populacao / cidade2.area);
-    printf("PIB per Capita: %.2f\n", (cidade2.PIB * 1000000000 / cidade2.populacao);
+    printf("PIB per Capita: %.2f\n", (cidade2.PIB * 1000000000) / cidade2.populacao);
 
     return 0;
 }
