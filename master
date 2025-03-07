@@ -119,5 +119,26 @@ float somaAtributosc2 = cidade2.populacao
         printf("%s tem a maior população\n", cidade2.nomeCidade);
     }
 
-    return 0;
+ if (cidade1.area > cidade2.area)
+        printf("%s tem a maior área\n", cidade1.nomeCidade);
+    else
+        printf("%s tem a maior área\n", cidade2.nomeCidade);
+
+    if (cidade1.PIB > cidade2.PIB)
+        printf("%s tem o maior PIB\n", cidade1.nomeCidade);
+    else
+        printf("%s tem o maior PIB\n", cidade2.nomeCidade);
+
+    if (cidade1.numeroPontosTuristicos > cidade2.numeroPontosTuristicos)
+        printf("%s tem mais pontos turísticos\n", cidade1.nomeCidade);
+    else
+        printf("%s tem mais pontos turísticos\n", cidade2.nomeCidade);
+
+    if (densidadeInvertidac1 > densidadeInvertidac2)
+        printf("%s tem a maior densidade invertida\n", cidade1.nomeCidade);
+    else
+        printf("%s tem a maior densidade invertida\n", cidade2.nomeCidade);    
+
+
+return 0;
 }
